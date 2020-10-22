@@ -6,6 +6,7 @@
 
 a, button {
     transition: all .3s ease-in-out;
+    cursor: pointer;
 }
 
 html {
@@ -84,4 +85,9 @@ body {
     padding: 2rem 7rem;
     background-color: transparent;
     margin-top: 4rem;          
+}
+
+.box__btn:hover {
+background-color: #f8d1233d;
+transition: all .3s ease;       
 }
