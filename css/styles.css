@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&family=Playfair+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+a, button {
+    transition: all .3s ease-in-out;
+}
+
+html {
+    font-size: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 5px;
+    }
+}
+
+body {
+    font: 300 18px 'Lato', sans-serif;
+    line-height: 3.4rem;
+    letter-spacing: -5;
+    color: #171717;
+}
+
+.box {
+    margin: 10rem;
+    padding: 12rem;
+    box-shadow: 0px 4px 68px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 600px) {
+    .box {
+        margin: 0;
+        padding: 15px;
+        box-shadow: 0;
+    }
+}
+
+.box__title {
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+    font-size: 4.2rem;
+}
+
+.box__parag {
+    margin-top: 4rem;
+}
+
+.box__parag:first-of-type::first-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 11rem;
+    font-weight: 700;
+    float: left;
+    text-transform: uppercase;
+    line-height: 9rem;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+.box__quote {
+    font-size: 2.4rem;
+    font-style: italic;
+    quotes: none;
+}
+
+.box__quote::before {
+    font-size: 6rem;
+    font-style: italic;
+    content: '\201c';
+    padding-right: 2rem;
+}
+
+.box__btn {
+        font-size: 18px;
+        color: rgb(234, 162, 88);
+        font-weight: 700;
+        text-transform: uppercase;
+            border-width: 2px;
+            border-color: rgb(234, 162, 88);
+            border-style: solid;
+    padding: 2rem 7rem;
+    background-color: transparent;
+    margin-top: 4rem;          
+}
